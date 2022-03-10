@@ -1,0 +1,28 @@
+.c-heading {
+  &--text {
+    &-extra-small {
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    &-small {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    &-medium {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    &-large {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    &-extra-large {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+  }
+}

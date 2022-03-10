@@ -1,0 +1,17 @@
+#pg-home {
+  background-color: green;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pg-home {
+    &__login-container {
+      background-color: orange;
+
+      &__title-wrapper {
+        background-color: blue;
+      }
+    }
+  }
+}
