@@ -1,0 +1,58 @@
+@import "../../global/styles/theme.scss";
+
+.c-input-text {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  &__input-wrapper {
+    position: relative;
+
+    &__icon-wrapper {
+      position: absolute;
+      right: 4px;
+      top: 5px;
+    }
+
+    &--input {
+      font-size: 1rem;
+      padding: 2px 22px 2px 4px;
+      border-radius: 4px;
+      border: 1px solid transparent;
+
+      &-error {
+        border-color: $failure;
+      }
+
+      &-success {
+        border-color: $success;
+      }
+
+      &-info {
+        border-color: $text;
+      }
+    }
+  }
+
+  &--feedback {
+    font-size: 0.5rem;
+    font-weight: 700;
+    margin-top: 2px;
+
+    &-error {
+      color: $failure;
+    }
+
+    &-success {
+      color: $success;
+    }
+
+    &-info {
+      color: $text;
+    }
+  }
+}
