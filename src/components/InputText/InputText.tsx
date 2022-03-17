@@ -37,13 +37,15 @@ const InputText = ({
     <div {...rest} className="c-input-text">
       <label>{label}</label>
       <div className="c-input-text__input-wrapper">
-        <div className="c-input-text__input-wrapper__icon-wrapper">
-          {feedback?.type === "error" ? (
-            <AiOutlineWarning color="#e60000" />
-          ) : (
-            <AiOutlineCheckCircle color="#49d049" />
-          )}
-        </div>
+        {feedback && (
+          <div className="c-input-text__input-wrapper__icon-wrapper">
+            {feedback?.type === "error" ? (
+              <AiOutlineWarning color="#e60000" />
+            ) : (
+              <AiOutlineCheckCircle color="#49d049" />
+            )}
+          </div>
+        )}
         <input
           type="text"
           className={`c-input-text__input-wrapper--input ${
